@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Introducion a la IA</title>
+ <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Aquí va tu CSS de los botones */
+    .download-btn {
+      background: linear-gradient(135deg, #ff7eb3, #ff758c);
+      color: #fff;
+      padding: 12px 20px;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .download-btn:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <!-- Menú -->
+  <nav>
+    <ul>
+      <li><a href="#equipamiento">Equipamiento</a></li>
+      <li><a href="#ascenso">Ascenso</a></li>
+      <li><a href="#discurso">Discurso</a></li>
+      <li><a href="#podcast">Podcast</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sección Equipamiento -->
+  <section id="equipamiento">
+    <h1>Sección Equipamiento</h1>
+
+    <!-- Imagen ilustrativa -->
+    <img src="assets/images/equipamiento.png" 
+         alt="Equipamiento Aconcagua" 
+         class="clickable-img">
+
+    <!-- Botón para descargar el PDF -->
+    <p>
+      <a href="assets/pdf/PROMPT equipamiento.pdf" download class="btn-descarga">
+        📥 Ver Prompt (PDF)
+      </a>
+    </p>
+  </section>
+
+  <!-- Sección Ascenso -->
+  <section id="ascenso">
+    <h1>Sección Ascenso</h1>
+
+    <!-- Imagen ilustrativa -->
+    <img src="assets/images/Imagen ascenso aconcagua.png" 
+         alt="Ascenso Aconcagua" 
+         class="clickable-img">
+
+    <!-- Botón para descargar el PDF -->
+    <p>
+      <a href="assets/pdf/PROMPT Ascenso.pdf" download class="btn-descarga">
+        📥 Ver Prompt (PDF)
+      </a>
+    </p>
+  </section>
+
+  <!-- Sección Discurso -->
+  <section id="discurso">
+    <h1>Sección Discurso</h1>
+    <p>
+      <a href="assets/pdf/Discurso ascenso aconcagua.pdf" download class="btn-descarga">
+        📥 Ver Prompt (PDF)
+      </a>
+    </p>
+  </section>
+
+ <!-- Sección Podcast -->
+<section id="podcast">
+  <h1>Podcast</h1>
+  
+   <!-- Script externo -->
+  <script src="script.js"></script>
+</body>
+</html>
+<audio controls>
+  <source src="audiovisual/audio/audio.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio.
+</audio>
+  <!-- Reproductor oculto -->
+  <audio id="podcastAudio" src="audiovisual/audio/audio.mp3"></audio>
+</section>
+  
+  <!-- Botón visible -->
+  <button id="podcastAudio" class="audio-btn">▶️</button>
+  
+  <!-- Audio oculto -->
+  <audio id="podcastAudio" src="audiovisual/audio/audio.mp3"></audio>
+</section>
+
+
+
+

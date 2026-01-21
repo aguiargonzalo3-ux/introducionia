@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Menú */
+nav {
+  background-color: #4B4B4B; /* gris topo */
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* separación entre ítems */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: #ffffff; /* letras blancas */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc00; /* dorado al pasar el mouse */
+}
+
+/* Secciones para probar scroll */
+section {
+  height: 100vh;
+  padding-top: 80px; /* espacio para que no tape el menú */
+}
+.equipamiento-img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+}
+img {
+  max-width: 1200px;   /* límite de ancho */
+  max-height: 900px;   /* límite de alto */
+  height: auto;       /* mantiene proporción */
+  width: auto;        /* mantiene proporción */
+  display: block;
+  margin: 10px auto;  /* centradas con espacio */
+}
+.clickable-img {
+  max-width: 600px;
+  max-height: 496px;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Fondo del modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+
+  /* 👇 habilitamos scroll si la imagen es más grande */
+  overflow-y: auto;
+}
+
+/* Imagen dentro del modal */
+.modal-content {
+  display: block;
+  margin: 40px auto;   /* separa de arriba/abajo */
+  max-width: 90%;      /* ancho máximo */
+  height: auto;        /* deja que crezca en altura */
+}
+
+/* Botón cerrar */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+#discurso {
+  margin-bottom: -450px;   /* elimina espacio extra debajo de Discurso */
+}
+
+#podcast {
+  margin-top: -450px !important;   /* fuerza que Podcast no se aleje */
+  padding-top: 0;             /* asegura que no haya espacio interno */
+}
+
+#podcast h1 {
+  margin-top: -450px !important;   /* quita margen del título */
+}
+#playPodcast {
+  position: relative !important;
+  top: 0px !important;
+}
+/* Estilo general para botones de descarga */
+a[download] {
+  display: inline-block;
+  background: linear-gradient(135deg, #4b2c2c, #a67c52); /* vino → dorado */
+  color: #f5e1c0; /* beige/dorado para contraste */
+  font-weight: bold;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Efecto hover */
+a[download]:hover {
+  background: linear-gradient(135deg, #6a3d3d, #c49a6c);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* Efecto al hacer clic */
+a[download]:active {
+  transform: scale(0.95);
+}
